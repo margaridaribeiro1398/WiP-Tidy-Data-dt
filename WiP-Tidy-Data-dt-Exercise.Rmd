@@ -111,7 +111,22 @@ wip <- fread(here("data", "WB-WiP.csv"),
              check.names = TRUE)
 ```
 
-# Continue from here...
+# Data Wrangling Aims
+
+We can simplifly the production of summaries and plots by restructuring the current "wip"
+dataset (wich has 4 columns) to the following format:
+
+NAO SEI
+
+## Key information retained.
+
+These three columns will contain the same information as the "wip" dataset but in a more usable format.
+We will also add a variable for the ratio of male to female MPs.
+
+## Superfluous columns.
+
+We will start by removing columns "V64, Indicator.Name and Indicator.Code."
+There are years without any data but they will be removed automatically later (when restructuring from "wide" to "long" format).
 
 
 
